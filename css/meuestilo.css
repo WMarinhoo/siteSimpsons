@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 	
 body {
@@ -29,3 +30,33 @@ h1 {
 
 		
 	
+=======
+
+	
+body {
+
+	background-color: red; 
+	font-family: sans-serif, cursive;
+	text-align: center;
+}
+
+
+h1 {
+
+			color: yellow;
+			text-align: center;
+		
+		}
+
+		p {
+
+			text-align: center;
+			color: yellow;
+		}
+
+		 b,a {
+
+			color: red;
+			font-size: 12pt;
+		}
+>>>>>>> bb09e396ee8cb8d218081fe3181e63c2ac41b069
