@@ -1,17 +1,25 @@
 
-@charset="utf-8";
-@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Roboto:wght@400;700&display=swap');
 
-body {
-
-	background-color: black;
-	color: rgb(255,221,2);
-	font-family: 'Gamja Flower', cursive;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+	background: linear-gradient(135deg, #000000, #1a1a1a);
+	color: #ffdd02;
+	font-family: 'Gamja Flower', cursive;
+	line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Cabeçalho fixo e moderno */
 header#cabecalho{
-	background-color: rgb(255,221,2);
+	background: #ffdd02;
+	backdrop-filter: blur(10px);
 	width: 100%;
 	margin-top: -10px;
 	display: flex;
@@ -21,46 +29,120 @@ header#cabecalho{
 	top: 0;
   	right: 0;
   	left: 0;
+	z-index: 1000;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+	transition: all 0.3s;
+	
 }
 
 img#foto_cabecalho {
-
-	width: 90%;
-	height: 600px;
+	width: 100%;
+    height: 90vh;
 	margin-top: 2px;
 	margin-left: -10px;
+   
 }
 
-nav#menu ul{
-	background-color: rgb(255,221,2);
-	width: 100%;
-	
+nav#menu {
+    padding: 1rem 0;
+    text-align: center;
 }
 
-nav#menu li{
-	display: inline-block;
-	padding: 20px;
-	font-size: 16pt;
-	
+nav#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-nav#menu li a{
-	text-decoration: none;
-	color: black;
+nav#menu li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.4s;
+    position: relative;
 }
 
-nav#menu li:hover{
-	background-color: #ffffff;
-	transition-duration: 1s;
+nav#menu li a:hover {
+    background: #000;
+    color: #ffdd02;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255,221,2,0.8);
 }
 
-iframe#video{
-	margin-left: 300px;
+/* Efeito de digitação no título (opcional, mas fica lindo) */
+h1::after {
+    content: '|';
+    animation: piscar 1s infinite;
 }
+
+@keyframes piscar {
+    50% { opacity: 0; }
+}
+
 
 footer#rodape{
 	font-family: 'Roboto',sans-serif;
 	width: 100%;
 	height: 40px;
 	text-align: center;
+}
+
+/* Rodapé moderno */
+footer#rodape {
+    background: #000;
+    color: #ffdd02;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 4rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav#menu ul { flex-direction: column; }
+    nav#menu li a { font-size: 1.2rem; padding: 15px; }
+    iframe#video { width: 95%; height: 300px; }
+}
+
+.video-section {
+    padding: 100px 20px 80px; /* espaço pro header fixo + margem */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    position: relative;
+    width: 90%;
+    max-width: 1300px;
+    aspect-ratio: 16 / 9;        /* proporção perfeita de vídeo */
+    border: 4px solid #ffdd02;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(255, 221, 2, 0.8);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsivo extremo – celular fica enorme também */
+@media (max-width: 768px) {
+    .video-container {
+        width: 96%;
+        border-width: 8px;
+        border-radius: 20px;
+    }
+    .video-section { padding: 120px 10px 60px; }
 }
