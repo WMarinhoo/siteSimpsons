@@ -1,0 +1,161 @@
+@charset="utf-8";
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	
+	background-color: black;
+	color: rgb(255,221,2);
+	font-family: 'Gamja Flower', cursive;
+}
+header#cabecalho{
+	background-color: rgb(255,221,2);
+	width: 100%;
+	margin-top: -10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0%;
+	top: 0;
+  	right: 0;
+  	left: 0;
+}
+
+img#foto_cabecalho {
+
+	width: 70%;
+	height: 350px;
+	margin-top: 2px;
+	margin-left: -10px;
+}
+
+nav#menu ul{
+	background-color: rgb(255,221,2);
+	width: 100%;
+	
+}
+nav#menu li{
+	display: inline-block;
+	padding: 20px;
+	font-size: 16pt;
+	
+}
+nav#menu li a{
+	text-decoration: none;
+	color: black;
+}
+nav#menu li:hover{
+	background-color: #ffffff;
+	transition-duration: 1s;
+}
+ul#album{
+	width: 80%;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+}
+
+ul#album li {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	background-color: rgb(255,221,2);
+	list-style: none;
+	-webkit-transition: all 1s ease-in;
+}
+
+ul#album li#foto_01{
+	background: url(../imagem/image1.jpg) no-repeat;
+	background-position: 50% 50%;	
+}
+ul#album li#foto_02{
+	background: url(../imagem/image3.jpg) no-repeat;
+	background-position: 50% 50%;
+}
+ul#album li#foto_03{
+	background: url(../imagem/image4.jpg) no-repeat;
+	background-position: 50% 50%;
+}
+ul#album li#foto_04{
+	background: url(../imagem/image5.jpg) no-repeat;
+	background-position: 50% 50%;
+}
+ul#album li#foto_05{
+	background: url(../imagem/image11.jpg) no-repeat;
+	background-position: 50% 50%;
+}
+ul#album li#foto_06{
+	background: url(../imagem/image12.png) no-repeat;
+	background-position: 50% 50%;
+}
+ul#album li#foto_07{
+	background: url(../imagem/image13.jpg) no-repeat;
+	background-position: 50% 50%;
+}
+ul#album li#foto_08{
+	background: url(../imagem/image14.jpg) no-repeat;
+	background-position: 50% 50%;
+}
+
+
+
+/*hover*/
+
+ul#album li#foto_01:hover{
+	background: url(../imagem/image1.jpg) no-repeat;
+	background-color: black;
+	background-position: 50% 50%;
+	-webkit-transform: scale(1.5);
+}
+ul#album li#foto_02:hover{
+	background: url(../imagem/image3.jpg) no-repeat;
+	background-position: 50% 50%;
+	-webkit-transform: scale(1.5);
+	background-color: black;
+
+}
+ul#album li#foto_03:hover{
+	background: url(../imagem/image4.jpg) no-repeat;
+	background-position: 50% 50%;
+	-webkit-transform: scale(1.5);
+
+}
+ul#album li#foto_04:hover{
+	background: url(../imagem/image5.jpg) no-repeat;
+	background-position: 50% 50%;
+	-webkit-transform: scale(1.5);
+
+}
+ul#album li#foto_05:hover{
+	background: url(../imagem/image11.jpg) no-repeat;
+	background-position: 50% 50%;
+	-webkit-transform: scale(1.5);
+
+}
+ul#album li#foto_06:hover{
+	background: url(../imagem/image12.png) no-repeat;
+	background-position: 50% 50%;
+	-webkit-transform: scale(1.5);
+
+}
+ul#album li#foto_07:hover{
+	background: url(../imagem/image13.jpg) no-repeat;
+	background-position: 50% 50%;
+	-webkit-transform: scale(1.5);
+
+}
+ul#album li#foto_08:hover{
+	background: url(../imagem/image14.jpg) no-repeat;
+	background-position: 50% 50%;
+	-webkit-transform: scale(1.5);
+
+}
+
+footer#rodape{
+	font-family: 'Roboto',sans-serif;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
+

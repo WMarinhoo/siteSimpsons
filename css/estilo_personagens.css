@@ -1,0 +1,206 @@
+@charset="utf-8";
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+
+	background-color: black;
+	color: rgb(255,221,2);
+	font-family: 'Gamja Flower', cursive;
+}
+header#cabecalho{
+	background-color: rgb(255,221,2);
+	width: 100%;
+	margin-top: -10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0%;
+	top: 0;
+  	right: 0;
+  	left: 0;
+}
+
+img#foto_cabecalho {
+
+	width: 70%;
+	height: 350px;
+	margin-top: 2px;
+	margin-left: -10px;
+}
+
+nav#menu ul{
+	background-color: rgb(255,221,2);
+	width: 100%;
+	
+}
+nav#menu li{
+	display: inline-block;
+	padding: 20px;
+	font-size: 16pt;
+	
+}
+nav#menu li a{
+	text-decoration: none;
+	color: black;
+}
+nav#menu li:hover{
+	background-color: #ffffff;
+	transition-duration: 1s;
+}
+
+
+/* artigos personagens*/
+
+div#artigo_01{
+	width: 100%;
+	height: 400px;
+	background-color: black;
+	color: rgb(255,221,2);
+	display: flex;
+	flex-direction: row;
+	align-items: center; 
+}
+div#artigo_01 p{
+	width: 35%;
+	float: left;
+	font-size: 16pt;
+	margin-left: 2%;
+	font-family: 'Roboto', sans-serif;
+	text-align: justify;
+	padding: 15px;
+}
+
+
+
+div#artigo_02{
+	width: 100%;
+	height: 400px;
+	background-color: rgb(255,221,2);
+	color: black ;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+div#artigo_02 p{
+	width: 35%;
+	font-size: 16pt;
+	font-family: 'Roboto', sans-serif;
+	text-align: justify;
+	padding: 15px;
+	display: block;
+	float: right;
+	margin-right: 2%;
+}
+div#artigo_02 img{
+	float: right;
+}
+
+
+
+div#artigo_03{
+	width: 100%;
+	height: 400px;
+	background-color: black;
+	color: rgb(255,221,2);
+	display: flex;
+	flex-direction: row;
+	align-items: center; 
+}
+div#artigo_03 p{
+	width: 45%;
+	float: left;
+	font-size: 14pt;
+	margin-left: 2%;
+	font-family: 'Roboto', sans-serif;
+	text-align: justify;
+	padding: 15px;
+}
+
+
+
+div#artigo_04{
+	width: 100%;
+	height: 400px;
+	background-color: rgb(255,221,2);
+	color: black ;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+div#artigo_04 p{
+	width: 45%;
+	font-size: 14pt;
+	font-family: 'Roboto', sans-serif;
+	text-align: justify;
+	padding: 15px;
+	display: block;
+	float: right;
+	margin-right: 2%;
+}
+div#artigo_04 img{
+	float: right;
+}
+
+
+
+
+div#artigo_05{
+	width: 100%;
+	height: 400px;
+	background-color: black;
+	color: rgb(255,221,2);
+	display: flex;
+	flex-direction: row;
+	align-items: center; 
+}
+div#artigo_05 p{
+	width: 45%;
+	float: left;
+	font-size: 14pt;
+	margin-left: 2%;
+	font-family: 'Roboto', sans-serif;
+	text-align: justify;
+	padding: 15px;
+}
+
+
+div#artigo_06{
+	width: 100%;
+	height: 400px;
+	background-color: rgb(255,221,2);
+	color: black ;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+div#artigo_06 p{
+	width: 45%;
+	font-size: 14pt;
+	font-family: 'Roboto', sans-serif;
+	text-align: justify;
+	padding: 15px;
+	display: block;
+	float: right;
+	margin-right: 2%;
+}
+
+
+
+
+.foto_artigo{
+	width: 150px;
+	height: 245px;
+}
+
+/* RODAPE*/
+
+footer#rodape{
+	font-family: 'Roboto',sans-serif;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
