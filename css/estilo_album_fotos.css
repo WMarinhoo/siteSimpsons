@@ -67,7 +67,6 @@ nav#menu li a {
 }
 
 nav#menu li a:hover {
-    background: #000;
     color: #ffdd02;
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(255,221,2,0.8);
