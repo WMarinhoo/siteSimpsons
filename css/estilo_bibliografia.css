@@ -1,16 +1,24 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Roboto:wght@400;700&display=swap');
 
-@charset="utf-8";
-@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-
-	background-color: black;
-	color: rgb(255,221,2);
+	background: linear-gradient(135deg, #000000, #1a1a1a);
+	color: #ffdd02;
 	font-family: 'Gamja Flower', cursive;
+	line-height: 1.6;
+    overflow-x: hidden;
 }
+
+/* Cabeçalho fixo e moderno */
 header#cabecalho{
-	background-color: rgb(255,221,2);
+	background: #ffdd02;
+	backdrop-filter: blur(10px);
 	width: 100%;
 	margin-top: -10px;
 	display: flex;
@@ -20,35 +28,62 @@ header#cabecalho{
 	top: 0;
   	right: 0;
   	left: 0;
+	z-index: 1000;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+	transition: all 0.3s;
+	
 }
 
 img#foto_cabecalho {
-
-	width: 70%;
-	height: 350px;
+	width: 100%;
+    height: 90vh;
 	margin-top: 2px;
 	margin-left: -10px;
+   
 }
 
-nav#menu ul{
-	background-color: rgb(255,221,2);
-	width: 100%;
-	
+nav#menu {
+    padding: 1rem 0;
+    text-align: center;
 }
-nav#menu li{
-	display: inline-block;
-	padding: 20px;
-	font-size: 16pt;
-	
+
+nav#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
-nav#menu li a{
-	text-decoration: none;
-	color: black;
+
+nav#menu li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.4s;
+    position: relative;
 }
-nav#menu li:hover{
-	background-color: #ffffff;
-	transition-duration: 1s;
+
+nav#menu li a:hover {
+    background: #000;
+    color: #ffdd02;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255,221,2,0.8);
 }
+
+/* Efeito de digitação no título (opcional, mas fica lindo) */
+h1::after {
+    content: '|';
+    animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+    50% { opacity: 0; }
+}
+
+
 h1,h2,h3{
 	font-family: 'Roboto', sans-serif; 
 	margin-left: 5%;
@@ -73,20 +108,14 @@ footer#rodape{
 	width: 100%;
 	height: 40px;
 	text-align: center;
-=======
-@charset="utf-8";
-@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-body {
-
-	background-color: black;
-	color: rgb(255,221,2);
-	font-family: 'Gamja Flower', cursive;
 }
-header#cabecalho{
-	background-color: rgb(255,221,2);
-	width: 100%;
-	margin-top: -10px;
-	display: flex;
+
+/* Rodapé moderno */
+footer#rodape {
+    color: #ffdd02;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 4rem;
 }
