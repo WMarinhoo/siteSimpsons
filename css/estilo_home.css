@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Roboto:wght@400;700&display=swap');
 
@@ -94,7 +93,6 @@ footer#rodape{
 
 /* Rodapé moderno */
 footer#rodape {
-    background: #000;
     color: #ffdd02;
     text-align: center;
     padding: 2rem;
@@ -112,7 +110,6 @@ footer#rodape {
 
 .video-section {
     padding: 100px 20px 80px; /* espaço pro header fixo + margem */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.9), #000);
     display: flex;
     justify-content: center;
     align-items: center;
