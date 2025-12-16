@@ -55,14 +55,15 @@ siteSimpsons/
 ## 🚀 Como Visualizar o Site Localmente
 
 1. Faça o clone do repositório:
-
-```bash
 git clone https://github.com/WMarinhoo/siteSimpsons.git
 
-2. Entre na pasta do projeto:
-cd siteSimpsons
 
-3. Abra o arquivo index.html no seu navegador (Chrome / Firefox / Edge etc.).
+2. Entre na pasta do projeto:
+```bash
+cd siteSimpsons
+```
+
+4. Abra o arquivo index.html no seu navegador (Chrome / Firefox / Edge etc.).
 
 📦 Publicação com GitHub Pages
 
